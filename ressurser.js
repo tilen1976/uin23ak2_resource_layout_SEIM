@@ -96,7 +96,7 @@ const resources = [
 ]
 
 
- 
+ /*
 let navtitle = "";
 
 let content = resources[0].text;

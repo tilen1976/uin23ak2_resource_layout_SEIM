@@ -23,10 +23,11 @@
         </nav>
         <main id="content">
            <h2 id="headline"></h2>
-            <p id="text"></p>
+            <p id="text">
+            </p>
             <ul>
-                <li>
-                    <a href="">ja</a>
+                <li id="source">
+                
 
                
                 </li>
@@ -44,6 +45,73 @@
 
         document.getElementById("html").innerHTML = title;*/
 
+    </script>
+    <script>
+        let navtitle = "";
+
+        //let content = resources[0].text;
+
+        let listElement = "";
+
+        let text = "";
+
+
+        resources.map(
+            (item) => { navtitle += `<a href="#${item.category}"  id="${item.category}"  onclick="myFunction(this)">${item.category}</a>`}
+    
+        )
+
+    
+        document.getElementById("title").innerHTML = navtitle;
+
+        //document.getElementById("headline").innerHTML = resources[0].category;
+        //document.getElementById("text").innerHTML = content;
+
+
+        function myFunction(e){
+            /*let element = resources.filter(resources.category == e.id);*/
+            
+            document.getElementById("headline").innerHTML = e.id;
+
+            let text = "";
+            resources.map(
+                (item) => {
+                if(item.category == e.id){
+                    text += `${item.text}`};
+                    document.getElementById("text").innerHTML = text;
+                    //(item) => { text += `${item.text}`}
+                }
+           // }
+           // (item) => { text += `${item.text}`}
+        
+        );
+
+       // document.getElementById("text").innerHTML = text;
+            //text = resources.find(x => x.id === e.id).text;
+            //document.getElementById("text").innerHTML = text;
+            //document.getElementById("text").innerHTML = e.text;
+
+           /* resources.map(
+            (item) => { 
+                
+            if(e.id == resources.category){
+            
+                
+
+                text += `${item.text}`;
+                document.getElementById("text").innerHTML = text;
+            }
+            }
+            )
+        */
+
+
+            }
+            
+            
+           
+
+        
     </script>
     
 </body>
