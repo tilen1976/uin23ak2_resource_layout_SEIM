@@ -16,14 +16,13 @@
         <nav>
             <span id="title"></span>
         </nav>
-        <main id="content">
+        <main class="content">
            <h2 id="headline"></h2>
             <p id="text">
             </p>
-           <!-- <ul>
-                <li id="source">      
-                </li>
-            </ul>-->
+           <!--- <span id="listSource"></span>-->
+            <ul id="listSource">
+            </ul>
         
         </main>
     </div>
@@ -33,7 +32,7 @@
 
         let listElement = "";
 
-        let text = "";
+        //let text = "";
 
 
         resources.map(
@@ -48,18 +47,52 @@
             
             document.getElementById("headline").innerHTML = e.id;
 
+            
+
             let text = "";
-            resources.map(
+            let link = "";
+        
+            
+           /* resources.map(
                 (item) => {
                 if(item.category == e.id){
                     text += `${item.text}`};
                     document.getElementById("text").innerHTML = text;
+  
+                }
+           );*/
+
+
+
+           resources.map(
+                (item) => {
+                if(item.category == e.id){
+                    text += `${item.text}`,
+                    item.sources.map(
+                        (item) => {
+                          link += `<li><a href="${item.url}">${item.title}</a></li>` 
+                        }
+                       
+                    )
+                };
+                    document.getElementById("text").innerHTML = text;
+                    document.getElementById("listSource").innerHTML = link;
+  
                 }
            );
 
+        
         }
-            
-              
+      //destrukturering
+      //hente fra index
+      //Denne inneholder teksten "Rolle:", etterfulgt av en if-test, skrevet som en ternary operator.
+
+    //Denne ternary operator-testen sjekker; dersom verdien av nøkkelen 
+    //role er "assistant", skal vi skrive ut ordet "Studentassistent". 
+    //Hvis ikke, skal vi skrive ut ordet "Faglærer".   
+    //spread
+    //arrow   
+             
     </script>
     
 </body>
