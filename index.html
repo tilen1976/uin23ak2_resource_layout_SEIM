@@ -14,42 +14,22 @@
 
         </header>
         <nav>
-            <!--Legge inn en onclick function her som endrer innhold på siden-->
             <span id="title"></span>
-            <!--Funksjon onclick-->
-           
-            <!--<p id="title" href=""></p>-->
-
         </nav>
         <main id="content">
            <h2 id="headline"></h2>
             <p id="text">
             </p>
-            <ul>
-                <li id="source">
-                
-
-               
+           <!-- <ul>
+                <li id="source">      
                 </li>
-            </ul>
+            </ul>-->
         
         </main>
     </div>
-    <script src="ressurser.js">
-       
-       /* const name = "Cecilie";
-
-        const title = "HTML";
-        
-        document.getElementById("navn").innerHTML = title;
-
-        document.getElementById("html").innerHTML = title;*/
-
-    </script>
+    <script src="ressurser.js"></script>
     <script>
         let navtitle = "";
-
-        //let content = resources[0].text;
 
         let listElement = "";
 
@@ -64,12 +44,7 @@
     
         document.getElementById("title").innerHTML = navtitle;
 
-        //document.getElementById("headline").innerHTML = resources[0].category;
-        //document.getElementById("text").innerHTML = content;
-
-
         function myFunction(e){
-            /*let element = resources.filter(resources.category == e.id);*/
             
             document.getElementById("headline").innerHTML = e.id;
 
@@ -79,39 +54,12 @@
                 if(item.category == e.id){
                     text += `${item.text}`};
                     document.getElementById("text").innerHTML = text;
-                    //(item) => { text += `${item.text}`}
                 }
-           // }
-           // (item) => { text += `${item.text}`}
-        
-        );
+           );
 
-       // document.getElementById("text").innerHTML = text;
-            //text = resources.find(x => x.id === e.id).text;
-            //document.getElementById("text").innerHTML = text;
-            //document.getElementById("text").innerHTML = e.text;
-
-           /* resources.map(
-            (item) => { 
-                
-            if(e.id == resources.category){
+        }
             
-                
-
-                text += `${item.text}`;
-                document.getElementById("text").innerHTML = text;
-            }
-            }
-            )
-        */
-
-
-            }
-            
-            
-           
-
-        
+              
     </script>
     
 </body>
