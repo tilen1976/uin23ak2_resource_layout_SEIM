@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 
 :root{
-    --turqouise: #25DFE6;
+    /*--turqouise: #25DFE6;*/
+    --turqouise: #21c8cf;
+    
     --grey: #787276;
     --lightgrey: #ececec;
     --maxwidth: 1200px;
@@ -101,8 +103,12 @@ main{
 
 }
 
-main li, a{
-    color: turquoise;
+main li{
+    color: var(--grey);
+}
+
+a{
+    color: var(--turqouise);
 }
 
 h2, h3, p{
