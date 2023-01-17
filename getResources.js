@@ -38,5 +38,8 @@ function myFunction(e){
         }
    );
 
+ //  Hvordan få onload når jeg må loope først?
+ // window.onload = myFunction;
+
 }
 
