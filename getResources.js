@@ -3,7 +3,8 @@ let navtitle = "";
 
 let listElement = "";
 
-//Loop through resources and store title in variable
+//Loop through resources and store title in variables
+//window onload her?
 resources.map(
     (item) => { navtitle += `<a href="#${item.category}"  id="${item.category}"  onclick="myFunction(this)">${item.category}</a>`}
 
@@ -38,8 +39,4 @@ function myFunction(e){
         }
    );
 
- //  Hvordan få onload når jeg må loope først?
- // window.onload = myFunction;
-
 }
-

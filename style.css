@@ -32,6 +32,8 @@ div.container{
     overflow: hidden;
 }
 
+
+
 header{
     padding: 1.5rem;
     border: 2px solid var(--border-grey);
@@ -51,7 +53,7 @@ nav{
     margin-left: 0;
     padding: 1rem;
     padding-left: 0;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
    
 
@@ -79,6 +81,8 @@ nav a{
    
 
 }
+
+/*Gjøre responsivt*/
 
 nav a:hover{
     background-color: var(--turqouise);
@@ -116,7 +120,3 @@ a{
 h2, h3, p{
     color: var(--grey);
 }
-
-
-
-
