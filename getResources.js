@@ -1,7 +1,7 @@
 //variable for nav titles
 let navtitle = "";
 
-//Loop through resources and store title in variables
+//Loop through resources and store title in variables. Define id. onclick function.
 resources.map(
     (item) => { navtitle += `<a href="#${item.category}"  id="${item.category}"  onclick="myFunction(this)">${item.category}</a>`}
 
@@ -10,12 +10,11 @@ resources.map(
 //Display variable content
 document.querySelector("#title").innerHTML = navtitle;
 
-//function for button to get all info from object
+//function for retrieving data from category
 function myFunction(e){
     
     document.querySelector("#headline").innerHTML = e.id;
-    //document.querySelector(a).style.backgroundColor = "#25DFE6";   
-
+    
     let text = "";
     let link = "";
 
@@ -38,11 +37,3 @@ function myFunction(e){
    );
 
 }
-
-
-/*function activeNav(){
-    document.querySelector("#").classList.toggle("hidden");
-}*/
-/*
-const myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!";*/

@@ -7,7 +7,6 @@
     --border-grey: #d3d3d3;
     --lightgrey: #ececec;
     --maxwidth: 1000px;
-    --mainwidth: 900px;
     --rootsize: 20px;
 }
 
@@ -33,7 +32,6 @@ div.container{
 header{
     padding: 1.5rem;
     border: 2px solid var(--border-grey);
-   /* text-transform: uppercase;*/
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -64,27 +62,24 @@ nav a{
 
 }
 
-
-/*Endre denne - se på*/
-/*nav a:target{
+nav a:target{
     background-color: var(--turqouise);
     color: white;
     border: none;
     border-bottom: 4px solid var(--turqouise);
 
-}*/
+}
 
+/*adde class onclick?
 .changeNav{
     background-color: var(--turqouise);
     color: white;
     border: none;
-    border-bottom: 4px solid var(--turqouise);
 }
-
+*/
 
 main{
-    /*Sjekk denne*/
-    max-width: 100%;
+  
     min-height: 300px;
 
     border: 2px solid var(--border-grey);
@@ -106,7 +101,7 @@ main .content ul{
 
 main .content ul li{
     color: var(--grey);
-    padding-top: .2rem;
+    padding-top: .4rem;
 }
 
 main .content ul li a{
