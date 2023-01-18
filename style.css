@@ -36,6 +36,10 @@ header{
     margin-bottom: 2rem;
 }
 
+header a{
+    text-decoration: none;
+}
+
 nav{
     width: 100%;   
     border-bottom: 6px solid var(--turqouise);
@@ -74,18 +78,6 @@ nav a:target{
     visibility: hidden;
     opacity: 0;
 }
-
-.target{
-    background-color: var(--turqouise);
-}
-
-/*adde class onclick?
-.changeNav{
-    background-color: var(--turqouise);
-    color: white;
-    border: none;
-}
-*/
 
 main{
   

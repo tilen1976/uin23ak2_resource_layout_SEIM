@@ -33,16 +33,7 @@ function myFunction(e){
     
             document.querySelector("#text").innerHTML = text;
             document.querySelector("#listSource").innerHTML = link;
-            //document.querySelector(".content").classList.toggle("hidden");
-            
-
         }
    );
    
 }
-
-function toggleView(){
-    document.querySelector("#text").classList.toggle("hidden");
-    document.querySelector("#listSource").id.toggle("hidden");
-}
-//document.querySelector("#content").classList.toggle("hidden");
