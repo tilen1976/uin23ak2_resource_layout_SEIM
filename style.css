@@ -70,6 +70,15 @@ nav a:target{
 
 }
 
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.target{
+    background-color: var(--turqouise);
+}
+
 /*adde class onclick?
 .changeNav{
     background-color: var(--turqouise);
