@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 
 :root{
-    --turqouise: #25DFE6;    
+    --turqouise: #25DFE6; 
     --fontturqouise: #07ced4;   
     --grey: #676767;
     --border-grey: #d3d3d3;
@@ -80,7 +80,7 @@ nav a:target{
 }
 
 main{
-    
+
     border: 2px solid var(--border-grey);
     border-top: none;
     overflow: hidden;

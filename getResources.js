@@ -2,7 +2,7 @@
 //variable for nav titles
 let navtitle = "";
 
-//Loop through resources and store title in variables. Define id. onclick function.
+//Loop through resources and store title in variables. Define id and make a elements perform onclick function.
 resources.map(
     (item) => { navtitle += `<a href="#${item.category}"  id="${item.category}"  onClick="myFunction(this)">${item.category}</a>`}
 
