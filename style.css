@@ -2,12 +2,18 @@
 
 :root{
     --turqouise: #25DFE6; 
-    --fontturqouise: #07ced4;   
-    --grey: #676767;
-    --border-grey: #d3d3d3;
-    --lightgrey: #ececec;
+    --oldfontturqouise: #07ced4;   
+    --fontturqouise: #00C1C9;  
+    --oldgrey: #676767;
+    --grey: #707070;
+    --oldborder-grey: #d3d3d3;
+    --border-grey: #b8b8b8;
+    --oldlightgrey: #ececec;
+    --lightgrey: #f5f5f5;
     --maxwidth: 1000px;
     --rootsize: 20px;
+    --border: 1px solid #b8b8b8;
+    /*variabel border?*/
 }
 
 
@@ -31,7 +37,8 @@ div.container{
 
 header{
     padding: 1.5rem;
-    border: 2px solid var(--border-grey);
+    /*border: 2px solid var(--border-grey);*/
+    border: var(--border);
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -56,7 +63,9 @@ nav a{
     text-transform: uppercase;
     transition: ease-in-out;
     background-color: var(--lightgrey);
-    border: 2px solid var(--border-grey);
+
+    /*border: 2px solid var(--border-grey);*/
+    border: var(--border);
     border-bottom: 4px solid var(--lightgrey);
     
 
@@ -66,10 +75,12 @@ nav a{
 
 }
 
+/*en blå ramme ved lasting */
 nav a:target{
     background-color: var(--turqouise);
     color: white;
-    border: none;
+    /*border: none;*/
+    border: 2px solid var(--turqouise);
     border-bottom: 4px solid var(--turqouise);
 
 }
@@ -81,7 +92,8 @@ nav a:target{
 
 main{
 
-    border: 2px solid var(--border-grey);
+    /*border: 2px solid var(--border-grey);*/
+    border: var(--border);
     border-top: none;
     overflow: hidden;
     
