@@ -80,15 +80,17 @@ nav a:target{
 }
 
 main{
-  
-    min-height: 300px;
-
+    
     border: 2px solid var(--border-grey);
     border-top: none;
     overflow: hidden;
     
     margin: 0;
 
+}
+
+main :target{
+    min-height: 300px;
 }
 
 .content{
