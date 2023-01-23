@@ -1,2 +1,3 @@
 # uin23ak2_resource_layout_SEIM
- Arbeidskrav
+ Arbeidskrav 2 UIN
+
