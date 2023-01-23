@@ -75,14 +75,27 @@ header a h1{
  
 }
 
-/*lage til en egen klasse som legges til og fjernes i javascript*/
-#title a:target{
+#title a.defaultStyle{
+    background-color: var(--lightgrey);
+    color: var(--grey);
+}
+
+#title a.styleChange{
     background-color: var(--turqouise);
     color: white;
 
     border: 2px solid var(--turqouise);
     outline: none;
 }
+
+
+ /*#title a:target{
+    background-color: var(--turqouise);
+    color: white;
+
+    border: 2px solid var(--turqouise);
+    outline: none;
+}*/
 
 
 main{
@@ -107,11 +120,13 @@ main .content h2{
 
 main .content ul{
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 main .content ul li{
     color: var(--grey);
     padding-top: .4rem;
+    
 }
 
 main .content ul li a{
