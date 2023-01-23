@@ -30,16 +30,20 @@ function myFunction(e){
 
             //kilde student Stine
             let elements = document.querySelectorAll(".defaultStyle");
+
             for(let i = 0; i < elements.length; i++){
                 elements[i].classList.remove("styleChange");
             }
              
         
             let element = document.getElementById(e.id)
+            
         
             element.classList.add("styleChange")
+  
            
         if(item.category === e.id){
+
             text += `${item.text}`,
             item.sources.map(
                 (item) => {
@@ -49,6 +53,7 @@ function myFunction(e){
             )
         };
     
+
             document.querySelector("#text").innerHTML = text;
             document.querySelector("#listSource").innerHTML = link;
 
