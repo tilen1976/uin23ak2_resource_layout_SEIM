@@ -9,6 +9,7 @@
     --maxwidth: 1000px;
     --rootsize: 16px;
     --border: 1px solid #b8b8b8;
+    --hiddenBorder: 1px solid white;
 }
 
 
@@ -88,18 +89,18 @@ header a h1{
 }
 
 main{
-
     max-width: 100%;
+    margin: 0 1rem;
+}
+
+.showMain{
     border: var(--border);
     border-top: none;
-    margin: 0 1rem;
-
 }
 
 .content{
     padding: 1rem 1.5rem;
     max-width: 70%;
-    min-height: 200px;
 }
 
 main .content h2{
@@ -133,24 +134,3 @@ p{
     line-height: 1.6;
     color: var(--grey);
 }
-
-@media only screen and (max-width: 895px) {
-
-    #title a{
-        border: var(--border);
-    }
-
-    #title a:nth-child(5){
-        border-bottom: none;
-    }
-
-  }
-
-  @media only screen and (max-width: 400px){
-
-    header{
-        margin: 1rem;
-        padding: 1rem;
-        font-size: smaller;
-    }
-  }
