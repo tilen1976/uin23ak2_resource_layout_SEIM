@@ -41,7 +41,7 @@ const resources = [
     },
     {
         category: "JavaScript",
-        text: "JavaScript er et scriptspråk basert på EcmaScript. JavaScript kjører direkte i nettleseren, og brukes ofte til å manipulere HTML og CSS i webgrensnesnitt.",
+        text: "JavaScript er et scriptspråk basert på EcmaScript. JavaScript kjører direkte i nettleseren, og brukes ofte til å manipulere HTML og CSS i webgrensesnitt.",
         sources: [
             {
                 title: "W3Schools",
