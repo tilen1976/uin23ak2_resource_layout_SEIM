@@ -2,27 +2,27 @@ let navtitle = "";
 
 /*hente ut tittel og legge i variabel.
   Definere en id og legge til function på onClick*/
+
 resources.map(
     (item) => { 
         navtitle += `<a href="#${item.category}"  
         id="${item.category}"  class="defaultStyle" 
-        onClick="myFunction(this)">${item.category}</a>`
+        onClick="showContent(this)">${item.category}</a>`
     }
 );
 
 document.querySelector("#title").innerHTML = navtitle;
 
 
+
 /*Funksjon som henter ut info om hver kategori
   Endrer style på anchor tag
   Legger til border på main
 */
-function myFunction(e){
+function showContent(e){
     
     //tror ike denne gjør noe
-    //document.querySelector("#headline").innerHTML = e.id;
-    //vurdere å dele opp til flere funksjoner 
- 
+    //document.querySelector("#headline").innerHTML = e.id; 
     let text = "";
     let link = "";
 
