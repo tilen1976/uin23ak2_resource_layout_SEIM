@@ -19,7 +19,9 @@ document.querySelector("#title").innerHTML = navtitle;
 */
 function myFunction(e){
     
-    document.querySelector("#headline").innerHTML = e.id;
+    //tror ike denne gjør noe
+    //document.querySelector("#headline").innerHTML = e.id;
+    //vurdere å dele opp til flere funksjoner 
  
     let text = "";
     let link = "";
